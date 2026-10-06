@@ -1,0 +1,42 @@
+1.Development of Passport Automation System
+Aim
+To build a simple, secure automated banking system so customers can handle their money 24/7 without visiting a bank branch.
+ Problem Statement
+Going to a physical bank means waiting in long lines and only doing business during open hours. Also, online banking systems must be highly secure and perfectly accurate so that money never vanishes during network crashes or system glitches.
+ Objective
+• 24/7 Access: Let users withdraw, deposit, and check balances anytime.
+• Tight Security: Protect accounts with safe PIN logins and block cards after 3 wrong tries.
+• Perfect Accuracy: Ensure balances update instantly and never make math mistakes.
+ Modules
+• Login Module: Checks the user's card and PIN to allow entry.
+• Cash Module: Handles taking money out (withdrawals) and putting money in (deposits).
+• Account Module: Shows account balances and prints out recent transaction history.
+• Admin Module: Helps bank staff check cash levels inside the machine and refill it.
+ Result
+The system works smoothly, blocks hackers, updates account balances instantly, and safely cancels transactions without losing money if the power or network suddenly cuts out.
+2. Software Requirement Specifications (SRS)
+ 1. Functional Requirements (What it does)
+• Login: Checks card and PIN.
+• Withdraw Cash: Deducts money and dispenses cash.
+• Deposit Cash: Adds money to the account balance.
+• Check Balance: Shows how much money is in the account.
+• Transfer Funds: Moves money safely to another account.
+ 2. Non-Functional Requirements (How it performs)
+• Security: Hides and protects PINs from hackers.
+• Accuracy: Never bugs out or loses money during transactions.
+• Speed: Processes requests in under 2 seconds.
+ System Environment Requirements
+• Hardware: Any basic computer or laptop with 4 GB RAM and 500 MB storage.
+• Software: Windows/Mac/Linux OS, Python or Java, and a simple database like SQLite.
+ System Architecture & Database
+System Architecture
+The system uses a simple 3-Layer setup:
+1. Screen (Frontend): What the user sees and clicks.
+2. Brain (Backend): Checks rules, daily limits, and approves math.
+3. Vault (Database): Safely stores user balances and profiles.
+Database Tables
+• Cards Table: Stores Card Number, PIN, and Card Status (Active/Blocked).
+• Accounts Table: Stores Account Number and the Current Balance.
+• Transactions Table: Logs history like Date, Amount, and Type (Withdraw/Deposit).
+Result
+The software runs cleanly. It grants entry to the right PINs, blocks bad attempts, updates balances flawlessly, and cancels safely without losing a single rupee if the system crashes midway.
